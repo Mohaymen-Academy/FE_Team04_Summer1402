@@ -1,5 +1,9 @@
 function Card() {
-  return <div>Card</div>;
+  return (
+ <></>
+ 
+ 
+  );
 }
 
-export default Card;
+export  {Card};

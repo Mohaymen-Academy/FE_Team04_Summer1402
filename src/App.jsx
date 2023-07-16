@@ -1,4 +1,5 @@
 import { Body } from "./components/Body";
+import { Card } from "./components/Card";
 import Header from "./components/Header";
 import { Swipper } from "./components/Swipper";
 
@@ -7,7 +8,9 @@ function App() {
     <>
       <Header />
       <Body />
+      <Card/>
       <Swipper />
+      
     </>
   );
 }
