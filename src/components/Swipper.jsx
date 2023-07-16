@@ -1,6 +1,7 @@
 function Swipper() {
   return (
-    <div>Swipper</div>
+    <>
+    </>
   )
 }
 

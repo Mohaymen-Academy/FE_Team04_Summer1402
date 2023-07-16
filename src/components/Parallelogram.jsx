@@ -5,6 +5,7 @@ function Parallelogram(props) {
       href={props.href}
     >
       <div className="skew-x-20">{props.children}</div>
+
     </a>
   );
 }
