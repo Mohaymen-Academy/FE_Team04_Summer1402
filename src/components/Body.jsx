@@ -3,11 +3,11 @@ import image from "../download.jpeg";
 function Body() {
   return (
     <main className="relative h-screen">
-      <div className="absolute z-10 mt-64 ml-20">
+      <div className="absolute z-10 mt-64 ml-20 mr-10 space-y-6">
         <div className="h-12 p-3 bg-red-700 -skew-x-20 inline-block">
           Play Staion
         </div>
-        <p className="text-4xl max-w-xl">
+        <p className="text-5xl max-w-xl">
           DOWNWELL AND SPACE HULK: TACTICS ARE COMING TO XBOX GAME PASS FOR PC
         </p>
         <div className="flex">
