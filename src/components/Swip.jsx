@@ -1,27 +1,24 @@
 import { Card } from "./Card";
 import { data } from "../data/swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 function Swip() {
   return (
-    <div>
+    <section className="py-8 bg-gray-400">
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={40}
         slidesPerView={3}
-        navigation
+        loop={true}
+        autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         className="flex w-10/12 text-center"
       >
         {...data.map((data) => (
-          <SwiperSlide>
+          <SwiperSlide className="mb-10 w-full hover:cursor-grabbing">
             <Card
               img={data.img}
               header={data.header}
@@ -31,7 +28,7 @@ function Swip() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 }
 
