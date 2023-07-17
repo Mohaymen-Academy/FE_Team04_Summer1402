@@ -16,6 +16,7 @@ function Body() {
             by Mojtaba & Mostafa / Jul 16, 2023
           </p>
         </div>
+
       </div>
 
       <img className="absolute w-screen h-full object-cover" src={body} />
