@@ -1,5 +1,5 @@
-import body from '../back.jpg'
-import image from '../download.jpeg'
+import body from "../back.jpg";
+import image from "../download.jpeg";
 function Body() {
   return (
     <main className='relative h-screen'>
@@ -11,12 +11,10 @@ function Body() {
       <p className='self-center italic ml-2'>by Mojtaba & Mostafa / Jul 16, 2023</p>
       </div>
       </div>
-    
-        <img className='absolute w-screen' src={body}/>
-        
-      
+
+      <img className="absolute w-screen h-full object-cover" src={body} />
     </main>
-  )
+  );
 }
 
-export {Body}
+export { Body };

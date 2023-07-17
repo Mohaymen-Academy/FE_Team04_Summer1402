@@ -10,7 +10,6 @@ function App() {
     <>
       <Header />
       <Body />
-      <Card />
       <Swip />
       <Footer />
       {/* <SideBar /> */}
