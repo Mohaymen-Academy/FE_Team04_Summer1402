@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Mohaymen-Academy.github.io/FE_Team04_Summer1402",
+  "homepage": "https://Mohaymen-Academy.github.io/FE_Team04_Summer1402/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
