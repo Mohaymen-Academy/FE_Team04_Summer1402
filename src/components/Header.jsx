@@ -20,29 +20,29 @@ function Header() {
       </div>
       <nav className="bg-red-700 h-24 w-screen flex justify-center items-center relative">
         <div className="flex justify-center w-11/12 max-w-[1000px] sm:justify-between">
-          <Parallelogram>
+          <Parallelogram className="p-6 text-xl">
             <FiMenu className="block sm:hidden" size={30} />
             <HiOutlineLogin className="hidden sm:block" size={30} />
           </Parallelogram>
           <ul className="justify-center items-center max-w-xl hidden sm:flex">
             <li>
-              <Parallelogram>
+              <Parallelogram className="p-6 text-xl">
                 <p>Home</p>
               </Parallelogram>
             </li>
             <li>
-              <Parallelogram>
+              <Parallelogram className="p-6 text-xl">
                 <p>Platform</p>
               </Parallelogram>
             </li>
             <li>
-              <Parallelogram>
+              <Parallelogram className="p-6 text-xl">
                 <p>Reviews</p>
               </Parallelogram>
             </li>
           </ul>
           <div className="relative">
-            <Parallelogram onClick={toggleSearchBar}>
+            <Parallelogram onClick={toggleSearchBar} className="p-6 text-xl">
               <BiSearchAlt size={30} />
             </Parallelogram>
             {showSearchBar && <SearchBar showSearchBar={showSearchBar} />}

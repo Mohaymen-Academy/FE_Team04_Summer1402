@@ -6,6 +6,9 @@ export default {
       skew: {
         20: "20deg",
       },
+      screens: {
+        md: "850px",
+      },
     },
   },
   plugins: [],
