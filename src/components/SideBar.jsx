@@ -15,12 +15,12 @@ function SideBar() {
       <div className="flex flex-col justify-center ">
         <img className="h-[150px] mt-4" src={logo} alt="" />
         <div className="bg-gray-600 rounded-lg h-14 w-60 self-center mt-5">
-          <Parallelogram className="mx-5 w-36">
+          <Parallelogram className="mx-6 w-36 ">
             <BiSearchAlt size={30} />
           </Parallelogram>
         </div>
       </div>
-      <ul className="flex mt-12 ml-14">
+      <ul className="flex mt-12  ml-14">
         <li>
           <Parallelogram bgColor="solid" className="h-10 p-3">
             <FiFacebook size={15} />
