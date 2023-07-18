@@ -1,5 +1,4 @@
 import logo from "../picsvg_download.svg";
-import { Sidebar_Parallelogram } from "./Sidebar-Parallelogram";
 import { Mini_Parallelogram } from "./Mini_Parallelogram";
 import footer1 from "../images/footer1.jpg";
 import footer2 from "../images/footer2.jpg";
@@ -19,21 +18,21 @@ function Footer() {
             facilisis.
           </p>
           <div className="flex mt-5">
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiFacebook size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiTwitter size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiYoutube size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiInstagram size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
           </div>
         </div>
 

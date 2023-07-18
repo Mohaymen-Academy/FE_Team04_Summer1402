@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 function Swip() {
   return (
-    <section className="py-8 bg-gray-400">
+    <section className="py-8 bg-gradient-to-b from-gray-800 to-neutral-950">
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={40}
