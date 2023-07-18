@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "vite build && pages/gh-pages -d dist"
+    "deploy": "vite build && gh-pages2 -d dist"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
