@@ -1,15 +1,14 @@
 import logo from "../picsvg_download.svg";
-import { Sidebar_Parallelogram } from "./Sidebar-Parallelogram";
 import { Mini_Parallelogram } from "./Mini_Parallelogram";
-import { FooterGameCards } from "./FooterGameCards";
 import footer1 from "../images/footer1.jpg";
 import footer2 from "../images/footer2.jpg";
 import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
+import Parallelogram from "./Parallelogram";
 
 function Footer() {
   return (
-    <footer className="flex flex-col  border-gray-500">
+    <footer className="flex flex-col flex-wrap  border-gray-500">
       <div className="bg-black border-b-2 w-screen space-y-10 sm:space-y-0 p-4 flex flex-col md:flex-row justify-center">
         <div className="flex justify-center flex-col items-center">
           <img className="h-28" src={logo} alt="" />
@@ -19,21 +18,21 @@ function Footer() {
             facilisis.
           </p>
           <div className="flex mt-5">
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiFacebook size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiTwitter size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiYoutube size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
 
-            <Sidebar_Parallelogram>
+            <Parallelogram bgColor="solid" className="w-8 h-8">
               <FiInstagram size={15} />
-            </Sidebar_Parallelogram>
+            </Parallelogram>
           </div>
         </div>
 
@@ -46,10 +45,10 @@ function Footer() {
               <img src={footer1} alt="" />
 
               <span className="flex flex-col">
-                <p className="text-white ml-4 max-w-sm">
+                <p className="text-white ml-4 max-w-sm text-sm">
                   A MONSTER PROM POSTER GOT HIJACKED FOR A PAPA ROACH CONCERT...
                 </p>
-                <p className="text-gray-600 ml-4 italic text-sm">
+                <p className="text-gray-600 ml-4 italic text-xs">
                   {" "}
                   Aug 01, 2019
                 </p>
@@ -58,10 +57,10 @@ function Footer() {
             <div className="flex max-w-sm">
               <img src={footer2} alt="" />
               <span>
-                <p className="text-white ml-4 max-w-sm">
+                <p className="text-white ml-4 max-w-sm text-sm">
                   FACEBOOK WANTS TO READ YOUR THOUGHTS WITH ITS AUGMENTED...
                 </p>
-                <p className="text-gray-600 ml-4 italic text-sm">
+                <p className="text-gray-600 ml-4 italic text-xs">
                   Aug 01, 2019
                 </p>
               </span>
@@ -74,39 +73,39 @@ function Footer() {
             <Mini_Parallelogram></Mini_Parallelogram> TAGS CLOUD
           </h1>
           <div className="grid grid-cols-3 grid-rows-3 lg:grid-cols-3 md:grid-cols-2 gap-4 mt-3">
-            <FooterGameCards>
+            <Parallelogram bgColor="solid">
               <p>Gaming</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Platform</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>PlayStation</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Hardwere</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Reviews</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Simulation</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Strategy</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Scientific</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Refrences</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Role Playing</p>
-            </FooterGameCards>
-            <FooterGameCards>
+            </Parallelogram>
+            <Parallelogram bgColor="solid">
               <p>Advantures</p>
-            </FooterGameCards>
+            </Parallelogram>
           </div>
         </div>
       </div>
