@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        iransans: ["vazir", "sans-serif"],
+        vazir: ["vazir", "sans-serif"],
       },
     },
   },

@@ -6,60 +6,208 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Vitrin</title>
   </head>
-  <body class="rtl-direction font-iransans flex justify-center bg-gray-200">
+  <body class="rtl-direction font-vazir bg-gray-200">
     <header>
       <nav></nav>
     </header>
-    <main
-      id="main"
-      class="w-full md:w-[552px] lg:w-[800px] px-4 bg-white rounded-md"
-    >
-      <section id="slider"></section>
+    <div class="flex justify-center w-full">
+      <main
+        id="main"
+        class="w-full md:w-[552px] lg:w-[800px] px-4 bg-white rounded-md flex justify-center"
+      >
+        <!-- It's a wrapper to avoid middle content to grow extensively -->
+        <div class="max-w-[575px] space-y-4">
+          <div class="slider">
+            <div class="slider--wrapper">
+            <div class="slider--item">
+              <div class="slide-counter">۳ / ۱</div>
+              <img src="./images/banners/Kash-Karbala.jpg" alt="A banner" class="slide--image">
+            </div>
 
-      <!-- Relegious Slider and banner -->
-      <section id="relegious" class="slider">
-        <div class="slider--title">
-          <h6>مذهبی</h6>
-          <a href="" class="show-all">نمایش همه</a>
-        </div>
-
-        <!-- Main content of the slider which includes some cards which are linkes -->
-        <div class="slider--content">
-          <div class="card">
-            <img src="" alt="" loading="lazy" />
-            <p></p>
+            <div class="slider--item">
+              <div class="slide-counter">۳ / ۲</div>
+              <img src="./images/banners/Ya-Hossein.jpg" alt="A banner" class="slide--image">
+            </div>
+            
+            <div class="slider--item">
+              <div class="slide-counter">۳ / ۳</div>
+              <img src="./images/banners/Kash-Karbala.jpg" alt="A banner" class="slide--image">
+            </div>
           </div>
+          </div>
+       
+
+          <!-- Relegious Slider and banner -->
+          <section id="relegious" class="slider">
+            <div class="slider--title">
+              <h6>مذهبی</h6>
+              <a href="" class="show-all">نمایش همه</a>
+            </div>
+
+            <!-- Main content of the slider which includes some cards which are linkes -->
+            <div class="slider--content">
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="banner">
+            <img
+              src="./images/banners/ezn-aza.png"
+              alt="Aza va taviz parcham"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Best Slider without banner -->
+          <section id="best" class="slider">
+            <div class="slider--title">
+              <h6>برترین ها</h6>
+            </div>
+
+            <div class="slider--content">
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+              <div class="card">
+                <img
+                  src="./images/relegious/avaieh-esgh.jpeg"
+                  alt=""
+                  loading="lazy"
+                  class="card--image"
+                />
+                <p class="card--title">آوای عشق</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 8 Categories -->
+          <section id="categories" class="categories"></section>
+
+          <section id="top-selers" class="slider">
+            <div class="slider--title">
+              <h6>پر فروش هفته</h6>
+              <a href="" class="show-all">نمایش همه</a>
+          </section>
+
+          <div class="banner">
+            <img
+              src="./images/banners/ezn-aza.png"
+              alt="Aza va taviz parcham"
+              loading="lazy"
+            />
+          </div>
+
+          <section id="life-style" class="slider">
+            <div class="slider--title">
+              <h6>سبک زندگی</h6>
+              <a href="" class="show-all">نمایش همه</a>
+          </section>
+          <div class="banner">
+            <img
+              src="./images/banners/ezn-aza.png"
+              alt="Aza va taviz parcham"
+              loading="lazy"
+            />
+          </div>
+
+          <section id="news" class="slider">
+            <div class="slider--title">
+              <h6>اخبار</h6>
+              <a href="" class="show-all">نمایش همه</a>
+          </section>
+          <div class="banner">
+            <img
+              src="./images/banners/ezn-aza.png"
+              alt="Aza va taviz parcham"
+              loading="lazy"
+            />
+          </div>
+
+          <section id="ads" class="slider">
+            <div class="slider--title">
+              <h6>تبلیغ گسترده</h6>
+              <a href="" class="show-all">نمایش همه</a>
+          </section>
+          <div class="banner">
+            <img
+              src="./images/banners/ezn-aza.png"
+              alt="Aza va taviz parcham"
+              loading="lazy"
+            />
+          </div>
+
+          <section id="soroush-plus" class="slider">
+            <div class="slider--title">
+              <h6>سروش پلاس</h6>
+              <a href="" class="show-all">نمایش همه</a>
+          </section>
         </div>
-      </section>
-
-      <div class="banner">
-        <img
-          src="./images/banners/ezn-aza.png"
-          alt="Aza va taviz parcham"
-          loading="lazy"
-        />
-      </div>
-
-      <!-- Best Slider without banner -->
-      <section id="best" class="slider"></section>
-
-      <!-- 8 Categories -->
-      <section id="categories" class=""></section>
-
-      <section id="top-selers" class="slider"></section>
-      <div class="banner"></div>
-
-      <section id="life-style" class="slider"></section>
-      <div class="banner"></div>
-
-      <section id="news" class="slider"></section>
-      <div class="banner"></div>
-
-      <section id="ads" class="slider"></section>
-      <div class="banner"></div>
-
-      <section id="soroush-plus" class="slider"></section>
-    </main>
+      </main>
+    </div>
     <footer></footer>
+    <script src="./js/createCategory.js" type="module"></script>
+    <script src="./js/offerCreator.js" type="module"></script>
+    <script src="./js/sliderCreator.js" type="module"></script>
   </body>
 </html>

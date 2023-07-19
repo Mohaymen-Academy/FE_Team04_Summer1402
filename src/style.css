@@ -15,8 +15,29 @@
     direction: rtl;
   }
 
+  .slider {
+    @apply max-w-[1000px];
+  }
+
+  .slider--wrapper {
+    @apply cursor-pointer overflow-hidden;
+    font-size: 0;
+  }
+
+  .slider--item {
+    @apply w-full object-cover h-60 inline-block;
+  }
+
+  .slide--image {
+    @apply h-full rounded-3xl;
+  }
+
+  .slide-counter {
+    @apply text-white px-2 py-1 text-xs absolute bottom-3 left-3 text-center bg-gray-600 w-fit rounded-3xl;
+  }
+
   .slider--title {
-    @apply flex justify-between my-2 text-lg;
+    @apply flex justify-between my-2 text-xl px-2;
   }
 
   .show-all {
@@ -25,5 +46,21 @@
 
   .banner {
     @apply my-2;
+  }
+
+  .slider--content {
+    @apply flex gap-2;
+  }
+
+  .card--image {
+    @apply rounded-3xl w-[90px] h-[90px] mb-2;
+  }
+
+  .categories {
+    @apply flex flex-wrap gap-2 justify-center items-start;
+  }
+
+  .category {
+    @apply w-[22%] flex flex-col items-center;
   }
 }
