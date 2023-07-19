@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "vazir";
+  src: url("../public/fonts/Vazir.ttf");
+}
+
+@layer base {
+}
+
+@layer components {
+  .rtl-direction {
+    direction: rtl;
+  }
+
+  .slider--title {
+    @apply flex justify-between my-2 text-lg;
+  }
+
+  .show-all {
+    @apply text-blue-700;
+  }
+
+  .banner {
+    @apply my-2;
+  }
+}

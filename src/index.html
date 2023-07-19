@@ -3,14 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <title>Vitrin</title>
   </head>
-  <body>
+  <body class="rtl-direction font-iransans flex justify-center bg-gray-200">
     <header>
       <nav></nav>
     </header>
-    <main></main>
+    <main
+      id="main"
+      class="w-full md:w-[552px] lg:w-[800px] px-4 bg-white rounded-md"
+    >
+      <section id="slider"></section>
+
+      <!-- Relegious Slider and banner -->
+      <section id="relegious" class="slider">
+        <div class="slider--title">
+          <h6>مذهبی</h6>
+          <a href="" class="show-all">نمایش همه</a>
+        </div>
+
+        <!-- Main content of the slider which includes some cards which are linkes -->
+        <div class="slider--content">
+          <div class="card">
+            <img src="" alt="" loading="lazy" />
+            <p></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="banner">
+        <img
+          src="./images/banners/ezn-aza.png"
+          alt="Aza va taviz parcham"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- Best Slider without banner -->
+      <section id="best" class="slider"></section>
+
+      <!-- 8 Categories -->
+      <section id="categories" class=""></section>
+
+      <section id="top-selers" class="slider"></section>
+      <div class="banner"></div>
+
+      <section id="life-style" class="slider"></section>
+      <div class="banner"></div>
+
+      <section id="news" class="slider"></section>
+      <div class="banner"></div>
+
+      <section id="ads" class="slider"></section>
+      <div class="banner"></div>
+
+      <section id="soroush-plus" class="slider"></section>
+    </main>
     <footer></footer>
   </body>
 </html>
