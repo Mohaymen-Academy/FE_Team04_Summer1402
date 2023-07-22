@@ -1,9 +1,8 @@
-import { data } from "../data/data.js";
+import { categories as data } from "../data/data.js";
 
 const categories = document.getElementById("categories");
-const categoriesData = data.categories;
 
-for (const category of categoriesData) {
+for (const category of data) {
   const card = createCategory(category);
   categories.appendChild(card);
 }
@@ -16,6 +15,7 @@ function createCategory(category) {
   image.src = category.image;
   image.alt = category.alt;
   image.setAttribute("loading", "lazy");
+  image.setAttribute("draggable", "false");
   image.className = "category--image";
 
   const title = document.createElement("p");

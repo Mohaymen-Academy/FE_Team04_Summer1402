@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,32 +10,35 @@
     <header>
       <nav></nav>
     </header>
+
     <div class="flex justify-center w-full">
       <main
         id="main"
-        class="w-full md:w-[552px] lg:w-[800px] px-4 bg-white rounded-md flex justify-center"
+        class="w-full md:w-[552px] lg:w-[800px] bg-white rounded-md flex justify-center flex-col items-center"
       >
-        <!-- It's a wrapper to avoid middle content to grow extensively -->
-        <div class="max-w-[575px] space-y-4">
-          <div class="slider">
-            <div class="slider--wrapper">
-            <div class="slider--item">
-              <div class="slide-counter">۳ / ۱</div>
-              <img src="./images/banners/Kash-Karbala.jpg" alt="A banner" class="slide--image">
-            </div>
 
-            <div class="slider--item">
-              <div class="slide-counter">۳ / ۲</div>
-              <img src="./images/banners/Ya-Hossein.jpg" alt="A banner" class="slide--image">
-            </div>
-            
-            <div class="slider--item">
-              <div class="slide-counter">۳ / ۳</div>
-              <img src="./images/banners/Kash-Karbala.jpg" alt="A banner" class="slide--image">
+        <!-- It's a wrapper to avoid middle content to grow extensively -->
+          <div class="slider--container">
+            <div class="slider--wrapper">
+              <a class="slider--item">
+                <div class="slider--counter">۳ / ۱</div>
+                <img src="./images/banners/Kash-Karbala.jpg" alt="A banner" class="slide--image"
+                draggable="false">
+              </a>
+              <a class="slider--item">
+                <div class="slider--counter">۳ / ۲</div>
+                <img src="./images/banners/Ya-Hossein.jpg" alt="A banner" class="slide--image" draggable="false">
+              </a>
+              <a class="slider--item">
+                <div class="slider--counter">۳ / ۳</div>
+                <img src="./images/banners/radio.jpg" alt="A banner" class="slide--image" draggable="false">
+              </a>
+              <a id="prev" class="prev">&#10094;</a>
+              <a id="next" class="next">&#10095;</a>
             </div>
           </div>
-          </div>
-       
+
+          <div class="max-w-[575px] sm:max-w-full w-full space-y-4 px-3">
 
           <!-- Relegious Slider and banner -->
           <section id="relegious" class="slider">
@@ -45,44 +48,7 @@
             </div>
 
             <!-- Main content of the slider which includes some cards which are linkes -->
-            <div class="slider--content">
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
+            <div class="offer--content">
             </div>
           </section>
 
@@ -100,44 +66,7 @@
               <h6>برترین ها</h6>
             </div>
 
-            <div class="slider--content">
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
-              <div class="card">
-                <img
-                  src="./images/relegious/avaieh-esgh.jpeg"
-                  alt=""
-                  loading="lazy"
-                  class="card--image"
-                />
-                <p class="card--title">آوای عشق</p>
-              </div>
+            <div class="offer--content">
             </div>
           </section>
 
@@ -148,6 +77,9 @@
             <div class="slider--title">
               <h6>پر فروش هفته</h6>
               <a href="" class="show-all">نمایش همه</a>
+            </div>
+
+            <div class="offer--content"></div>
           </section>
 
           <div class="banner">
@@ -162,6 +94,8 @@
             <div class="slider--title">
               <h6>سبک زندگی</h6>
               <a href="" class="show-all">نمایش همه</a>
+            </div>
+            <div class="offer--content"></div>
           </section>
           <div class="banner">
             <img
@@ -175,6 +109,8 @@
             <div class="slider--title">
               <h6>اخبار</h6>
               <a href="" class="show-all">نمایش همه</a>
+            </div>
+            <div class="offer--content"></div>
           </section>
           <div class="banner">
             <img
@@ -188,6 +124,8 @@
             <div class="slider--title">
               <h6>تبلیغ گسترده</h6>
               <a href="" class="show-all">نمایش همه</a>
+            </div>
+            <div class="offer--content"></div>
           </section>
           <div class="banner">
             <img
@@ -201,13 +139,17 @@
             <div class="slider--title">
               <h6>سروش پلاس</h6>
               <a href="" class="show-all">نمایش همه</a>
+            </div>
+            <div class="offer--content"></div>
           </section>
         </div>
+      </div>
       </main>
     </div>
     <footer></footer>
     <script src="./js/createCategory.js" type="module"></script>
     <script src="./js/offerCreator.js" type="module"></script>
-    <script src="./js/sliderCreator.js" type="module"></script>
+    <script src="./js/slideShow.js" type="module"></script>
+    <script src="./js/offerSlider.js" type="module"></script>
   </body>
 </html>
