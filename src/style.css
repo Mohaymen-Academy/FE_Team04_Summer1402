@@ -7,12 +7,6 @@
   src: url("../public/fonts/Vazir.ttf");
 }
 
-@layer base {
-  html {
-    scrollbar-width: none;
-  }
-}
-
 @layer components {
   .rtl-direction {
     direction: rtl;
@@ -122,5 +116,20 @@
 
   .offer--content.active .card {
     @apply scale-105;
+  }
+
+  .fadeIn {
+    opacity: 1;
+    transition: all;
+    transition-duration: 100ms;
+    bottom: 0;
+  }
+
+  .footer--icon {
+    @apply h-8 w-8;
+  }
+
+  .footer--icon img {
+    @apply w-full h-full text-gray-600;
   }
 }
