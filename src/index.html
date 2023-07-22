@@ -3,14 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <title>Vitrin</title>
   </head>
-  <body>
-    <header>
-      <nav></nav>
+  <body class="rtl-direction font-vazir bg-gray-200 overflow-y-visible">
+    
+    <header  class="flex flex-col fixed top-0 z-10">
+      <div
+      id="blue_nav"
+      class="hidden md:flex md:flex-col md:pt-2 md:pr-12 md:bg-blue-800 md:w-screen md:h-20 transition-all duration-500"
+    >
+      <img
+        class="h-10 w-10 rounded-full mr-4"
+        src="./images/sorush-plus/souroush+.svg"
+        alt="soroushPlusLogo"
+      />
+      <p class="text-white">سروش پلاس</p>
+    </div>
+      <a
+        id="ads"
+        href="#"
+        class="bg-gray-100 md:hidden w-screen h-16 flex justify-between flex-row items-center px-4 py-3"
+      >
+        <div class="flex flex-row items-center">
+          <img
+            class="h-4 w-4 px-1"
+            src="./images/sorush-plus/x-symbol.svg"
+            alt="x-symbol"
+            id="x-symbol"
+          />
+          <img
+            class="h-10 w-10 rounded-2xl"
+            src="./images/sorush-plus/soroushPlusLogo.svg"
+            alt="soroushPlusLogo"
+          />
+          <span class="flex flex-col pr-2">
+            <p>اپلیکیشن سروش پلاس</p>
+            <p>دریافت رایگان برنامه</p>
+          </span>
+        </div>
+        <span class="text-blue-900">دانلود</span>
+      </a>
+      <form
+        class="self-center mt-8 flex items-center justify-between rounded-md px-4 bg-white border-2 border-solid w-11/12 max-w-lg md:hidden"
+      >
+        <input
+          class="rounded-md flex-1 p-3 w-full right-0 outline-none"
+          type="search"
+          placeholder="جست و جو در ویترین"
+        />
+        <button class="w-6 h-6 left-3">
+          <img src="./images/sorush-plus/search-icon.svg" alt="" />
+        </button>
+      </form>
+      <nav id="navbar"
+        class="hidden md:bg-white md:flex items-center md:w-screen md:h-20 shadow-xl shadow-gray-300 transition-all duration-500"
+      >
+        <div id="aos" class="select-none  -bottom-16 relative w-20 h-20 flex flex-col items-center justify-center mr-12">
+          <img  id="img"
+            class="rounded-full h-8 w-8 opacity-0"
+            src="./images/sorush-plus/soroushPlusLogo.svg"
+            alt=""
+          />
+          <p id="text" class="text-xs opacity-0">سروش پلاس</p>
+        </div>
+      
+        <div
+          class="max-w-3xl w-full mx-auto flex justify-between items-center"
+        >
+        
+          <ul class="text-sm font-bold flex gap-3 w-full">
+            <li>
+              <a href="#">صفحه نخست</a>
+            </li>
+            <li>
+              <a href="#">بلاگ</a>
+            </li>
+            <li>
+              <a href="#">دریافت برنامه</a>
+            </li>
+          </ul>
+
+          <div class="flex items-center justify-center w-full">
+            <form method="GET">
+              <div class="relative text-gray-600 focus-within:text-gray-400">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                  <button
+                    type="submit"
+                    class="p-1 hover:text-white transition-all delay-75 focus:outline-blue-800 focus:shadow-outline"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                </span>
+                <input
+                  type="search"
+                  name="q"
+                  class="border-[1px] border-gray-400 py-2  text-sm text-white pr-3 rounded-3xl pl-10 focus:outline-none focus:bg-white focus:text-gray-900"
+                  placeholder="جست و جو در ویترین"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="mb-96"><div class="h-screen w-full bg-black"></div></main>
+    <footer class="flex bg-gray-100 w-screen h-32 justify-center items-center">
+      <div class="flex gap-3">
+        <div class="h-10 w-10 md:h-14 md:w-14">
+          <a href="">
+            <img src="./images/sorush-plus/twitterLogo.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="h-10 w-10 md:w-14 md:h-14 flex items-center justify-center">
+          <a href="">
+            <img
+              src="./images/sorush-plus/aparatLogo.svg"
+              alt=""
+              class="w-full h-full"
+            />
+          </a>
+        </div>
+        <div class="h-10 w-10 md:w-14 md:h-14">
+          <a href="">
+            <img src="./images/sorush-plus/envelop.svg" alt="" />
+          </a>
+        </div>
+        <div class="h-10 w-10 md:w-14 md:h-14">
+          <a href="">
+            <img src="./images/sorush-plus/www.svg" alt="" />
+          </a>
+        </div>
+        <div class="h-10 w-10 md:w-14 md:h-14">
+          <a href="">
+            <img src="./images/sorush-plus/instagram.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <p class="text-xs pr-2">
+        تمامی حقوق مادی و معنوی این صفحه متعلق به پیام رسان سروش پلاس می‌باشد.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
