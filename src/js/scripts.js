@@ -23,5 +23,4 @@ for (const i in buttons) {
   buttons[i].addEventListener("click", () => {
     dropdownMenus[i].classList.toggle("hidden");
   });
-  console.log(1);
 }
