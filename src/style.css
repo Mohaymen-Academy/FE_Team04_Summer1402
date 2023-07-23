@@ -55,6 +55,26 @@
   .side-bar {
     @apply h-full bg-white;
   }
+
+  .main-wrapper{
+      @apply h-[95%] w-96  p-2
+  }
+
+  .middle-div {
+    @apply bg-white h-[90%] w-80 p-2 rounded-sm
+  }
+
+  .drag-drop{
+    @apply  w-full h-28 bg-white border-dashed border-[2px] border-blue-600 rounded-md
+  }
+
+  .btn-under{
+    @apply bg-gray-200 h-12 w-80 rounded-lg mt-2 text-blue-600 text-lg text-center border-2 border-white
+  }
+
+  .btn-middle{
+    @apply bg-gray-200 h-8 w-8 border-[1px] border-white rounded-md text-center p-1
+  }
 }
 
 @layer utilities {
