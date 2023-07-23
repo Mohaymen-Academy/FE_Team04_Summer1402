@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-300;
+  }
+
+  header {
+    @apply h-[56px] bg-white w-full;
+  }
+
+  nav {
+    @apply flex justify-between items-center h-full w-full;
+  }
+}
+
+@layer components {
+  .rtl-direction {
+    direction: rtl;
+  }
+}
