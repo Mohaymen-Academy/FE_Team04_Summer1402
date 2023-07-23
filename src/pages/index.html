@@ -16,23 +16,22 @@
 
           <div class="nav--features--buttons">
             <a href="#" class="btn btn-solid">
-              <img
-                src="../images/page builder-Component 4.svg"
-                alt="soroush logo"
-                class="icon"
-              />
+              <img src="../images/eye.svg" alt="eye icon" class="icon" />
             </a>
             <a href="#" class="btn btn-solid">
-              <img
-                src="../images/page builder-Component 6.svg"
-                alt="soroush logo"
-                class="icon"
-              />
+              <img src="../images/home.svg" alt="home icon" class="icon" />
             </a>
             <a href="#" class="btn btn-solid">
+              <img src="../images/send.svg" alt="send icon" class="icon" />
+            </a>
+            <a
+              href="#"
+              class="btn btn-solid block md:hidden"
+              id="toggle-template"
+            >
               <img
-                src="../images/page builder-vuesax-outline-directbox-send.svg"
-                alt="soroush logo"
+                src="../images/template.svg"
+                alt="templeta icon"
                 class="icon"
               />
             </a>
@@ -46,16 +45,22 @@
           <a href="#" class="btn btn-solid">
             <img src="../images/undo.svg" alt="redo icon" class="icon" />
           </a>
-          <button class="btn btn-solid block sm:hidden">
+          <button class="btn btn-solid block sm:hidden" id="toggle-setting">
             <img src="../images/menu.svg" alt="menu icon" class="icon" />
           </button>
         </div>
       </nav>
     </header>
     <main>
-      <div class="templates"></div>
-      <div class="page-builder"></div>
-      <div class="setting"></div>
+      <section id="templates" class="side-bar">
+        <h3 class="mb-4 whitespace-nowrap">قالب ها</h3>
+        <div class="templates--wrapper"></div>
+      </section>
+      <section class="page-builder"></section>
+      <section id="setting" class="setting side-bar"></section>
     </main>
+
+    <script src="../js/templateCreator.js" type="module"></script>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

@@ -9,15 +9,23 @@
 
 @layer base {
   body {
-    @apply bg-gray-300 font-vazir;
+    @apply bg-gray-300 font-vazir h-screen;
   }
 
   header {
-    @apply h-[56px] bg-white w-full;
+    @apply h-[56px] bg-white w-full shadow-xl shadow-gray-200 relative z-10;
   }
 
   nav {
     @apply flex justify-between items-center h-full w-full px-4;
+  }
+
+  main {
+    @apply flex h-full justify-between;
+  }
+
+  h3 {
+    @apply text-lg;
   }
 }
 
@@ -35,8 +43,17 @@
     @apply hover:bg-gray-200;
   }
 
+  .btn-full {
+    @apply w-full border border-gray-400 rounded-lg py-2 overflow-hidden;
+    transition: background-color 300ms;
+  }
+
   .icon {
     @apply w-5 h-5 sm:w-6 sm:h-6;
+  }
+
+  .side-bar {
+    @apply h-full bg-white;
   }
 }
 
@@ -55,5 +72,27 @@
 
   .nav--features--buttons {
     @apply flex gap-1 sm:gap-2;
+  }
+
+  #templates {
+    @apply w-0 md:w-40 md:p-4 overflow-x-hidden relative z-10;
+    transition: all 300ms;
+  }
+
+  #templates.open {
+    @apply w-40 p-4;
+  }
+
+  #setting {
+    @apply w-0 sm:w-[310px] md:p-4 overflow-hidden relative z-20;
+    transition: all 300ms;
+  }
+
+  #setting.open {
+    @apply w-[310px] p-4;
+  }
+
+  .templates--wrapper {
+    @apply flex flex-col justify-center items-center space-y-3;
   }
 }
