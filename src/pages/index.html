@@ -53,11 +53,137 @@
     </header>
     <main>
       <section id="templates" class="side-bar">
-        <h3 class="mb-4 whitespace-nowrap">قالب ها</h3>
+        <h3 class="mb-4 mt-3 whitespace-nowrap">قالب ها</h3>
         <div class="templates--wrapper"></div>
       </section>
       <section class="page-builder"></section>
-      <section id="setting" class="setting side-bar"></section>
+
+      <!-- Left side-bar using for setting -->
+      <section id="setting" class="setting side-bar">
+        <p class="font-bold mt-4">ساختار</p>
+        <div id="align-buttons">
+          <button class="btn btn-solid">
+            <img
+              src="../images/align-bottom.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+          <button class="btn btn-solid">
+            <img
+              src="../images/align-horizontally.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+          <button class="btn btn-solid">
+            <img
+              src="../images/align-left.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+          <button class="btn btn-solid">
+            <img
+              src="../images/align-right.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+          <button class="btn btn-solid">
+            <img
+              src="../images/align-vertically.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+          <button class="btn btn-solid">
+            <img
+              src="../images/linear-frame.svg"
+              alt="align bottom icon"
+              class="icon"
+            />
+          </button>
+        </div>
+
+        <a class="upload-section">
+          <div class="upload-section--plus">
+            <img src="../images/plus-sign.svg" alt="plus sign" />
+          </div>
+          <p class="text-blue-500">افزودن عکس</p>
+          <p class="text-xs text-gray-500 whitespace-nowrap">
+            حجم عکس تا ۵ مگابایت و بافرمت JPG, PNG
+          </p>
+        </a>
+
+        <div class="setter">
+          <label class="setter--title">فاصله بین ستون ها</label>
+          <input class="setter--value" />
+        </div>
+
+        <div class="setter">
+          <label class="setter--title">ارتفاع</label>
+          <input class="setter--value" />
+        </div>
+
+        <div class="setter">
+          <label class="setter--title">حاشیه</label>
+          <input class="setter--value" />
+        </div>
+
+        <div class="setter">
+          <label class="setter--title">فاصله گذاری</label>
+          <input class="setter--value" />
+        </div>
+
+        <div class="setter">
+          <label class="setter--title">گوشه ها</label>
+          <input class="setter--value" />
+        </div>
+
+        <div class="setter relative">
+          <label class="setter--title"> ساختار</label>
+
+          <button
+            class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+          >
+            <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M7.293 10.293a1 1 0 011.414 0L10 11.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="absolute hidden text-gray-700 pt-1 w-full bg-white shadow-lg"
+          >
+            <li>
+              <a
+                class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 1</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 2</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href="#"
+                >Option 3</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <script src="../js/templateCreator.js" type="module"></script>
