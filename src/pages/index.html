@@ -51,12 +51,47 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="relative w-full">
       <section id="templates" class="side-bar">
         <h3 class="mb-4 mt-3 whitespace-nowrap">قالب ها</h3>
         <div class="templates--wrapper"></div>
       </section>
-      <section class="page-builder"></section>
+
+      <section id="page-builder" class="mx-auto">
+        <div
+          id="main-wrapper"
+          class="main-wrapper flex relative top-1/2 -translate-y-1/2"
+        >
+          <div>
+            <div class="middle-div">
+              <a class="upload-section">
+                <div class="upload-section--plus">
+                  <img src="../images/plus-sign.svg" alt="plus sign" />
+                </div>
+                <p class="text-blue-500">افزودن عکس</p>
+              </a>
+            </div>
+            <button class="btn-under">+ افزودن صفحه</button>
+          </div>
+          <div class="flex-col flex mr-3 gap-3">
+            <button class="btn-middle">
+              <img src="../images/pen.png" alt="pen" />
+            </button>
+            <button class="btn-middle">
+              <img src="../images/up.png" alt="up" />
+            </button>
+            <button class="btn-middle">
+              <img src="../images/down.png" alt="down" />
+            </button>
+            <button class="btn-middle">
+              <img src="../images/lock.png" alt="lock" />
+            </button>
+            <button class="btn-middle">
+              <img src="../images/trash.png" alt="trash" />
+            </button>
+          </div>
+        </div>
+      </section>
 
       <!-- Left side-bar using for setting -->
       <section id="setting" class="setting side-bar">

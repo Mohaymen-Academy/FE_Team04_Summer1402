@@ -53,7 +53,7 @@
   }
 
   .side-bar {
-    @apply h-full bg-white;
+    @apply h-full bg-white relative shadow-xl shadow-gray-500;
   }
 
   .upload-section {
@@ -71,48 +71,68 @@
   .setter--title {
     @apply whitespace-nowrap;
   }
-}
 
-@layer utilities {
-  .nav--control-buttons {
-    @apply flex gap-1 sm:gap-2;
+  .main-wrapper {
+    @apply h-[95%] w-96 mx-auto px-2;
   }
 
-  .nav--page-title {
-    @apply text-blue-700;
+  .middle-div {
+    @apply bg-white h-[90%] w-80 p-4 rounded;
   }
 
-  .nav--features {
-    @apply flex gap-3 items-center;
+  .drag-drop {
+    @apply w-full h-28 bg-white border-dashed border-[2px] border-blue-600 rounded-md;
   }
 
-  .nav--features--buttons {
-    @apply flex gap-1 sm:gap-2;
+  .btn-under {
+    @apply bg-gray-200 h-12 w-80 rounded-lg mt-2 text-blue-600 text-lg text-center border-2 border-white;
   }
 
-  #templates {
-    @apply w-0 md:w-40 md:p-4 overflow-x-hidden;
-    transition: all 300ms;
+  .btn-middle {
+    @apply bg-gray-200 h-8 w-8 border-[1px] border-white rounded-md text-center p-1;
   }
 
-  #templates.open {
-    @apply w-40 p-4;
-  }
+  @layer utilities {
+    .nav--control-buttons {
+      @apply flex gap-1 sm:gap-2;
+    }
 
-  #setting {
-    @apply w-0 sm:w-[310px] sm:p-4 overflow-x-hidden overflow-y-auto space-y-5;
-    transition: all 300ms;
-  }
+    .nav--page-title {
+      @apply text-blue-700;
+    }
 
-  #setting.open {
-    @apply w-[310px] p-4;
-  }
+    .nav--features {
+      @apply flex gap-3 items-center;
+    }
 
-  .templates--wrapper {
-    @apply flex flex-col justify-center items-center space-y-3;
-  }
+    .nav--features--buttons {
+      @apply flex gap-1 sm:gap-2;
+    }
 
-  #align-buttons {
-    @apply flex justify-between;
+    #templates {
+      @apply w-0 md:w-36 md:p-4 overflow-x-hidden right-0 z-10 absolute md:relative;
+      transition: all 300ms;
+    }
+
+    #templates.open {
+      @apply w-40 p-4;
+    }
+
+    #setting {
+      @apply w-0 sm:w-[310px] sm:p-4 overflow-x-hidden overflow-y-auto space-y-5 left-0 absolute sm:relative;
+      transition: all 300ms;
+    }
+
+    #setting.open {
+      @apply w-[310px] p-4;
+    }
+
+    .templates--wrapper {
+      @apply flex flex-col justify-center items-center space-y-3;
+    }
+
+    #align-buttons {
+      @apply flex justify-between;
+    }
   }
 }
