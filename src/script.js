@@ -1,14 +1,18 @@
+
 const xSymbol = document.getElementById("x-symbol");
 const ads = document.getElementById("ads");
-
-xSymbol.addEventListener("click", () => {
-  ads.style.display = "none";
-});
-
+const mainHeader = document.querySelector("#main-header");
 const header = document.querySelector("#blue_nav");
 const navbar = document.querySelector("#navbar");
 const aos = document.querySelector("#aos");
 const text = document.querySelector("#text");
+const searchInput = document.querySelector("#search-form");
+const mainDiv = document.querySelector("#main");
+xSymbol.addEventListener("click", () => {
+  ads.style.display = "none";
+ mainDiv.style.marginTop = "55px";
+ searchInput.style.width = "100%"
+});
 
 function sleep(time) {
   return new Promise((resolve) => {
@@ -32,8 +36,8 @@ document.addEventListener("scroll", async () => {
 
   const scrolledHeight = document.documentElement.scrollTop;
   if (scrollDirection === "down") {
-    header.style.transform = "translateY(-5rem)";
-    navbar.style.transform = "translateY(-5rem)";
+    header.style.transform = "translateY(-4rem)";
+    navbar.style.transform = "translateY(-4rem)";
     aos.classList.add("fadeIn");
   }
   if (scrollDirection === "up") {
